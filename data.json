@@ -1,0 +1,400 @@
+[
+  {
+    "topName": "1",
+    "heuristicEvaluation": 27,
+    "edges": [
+      {
+        "edgeName": "2",
+        "weight": 4
+      },
+      {
+        "edgeName": "3",
+        "weight": 7
+      },
+      {
+        "edgeName": "5",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "topName": "2",
+    "heuristicEvaluation": 24,
+    "edges": [
+      {
+        "edgeName": "1",
+        "weight": 6
+      },
+      {
+        "edgeName": "4",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "topName": "3",
+    "heuristicEvaluation": 23,
+    "edges": [
+      {
+        "edgeName": "1",
+        "weight": 7
+      },
+      {
+        "edgeName": "5",
+        "weight": 2
+      },
+      {
+        "edgeName": "6",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "4",
+    "heuristicEvaluation": 21,
+    "edges": [
+      {
+        "edgeName": "2",
+        "weight": 3
+      },
+      {
+        "edgeName": "5",
+        "weight": 3
+      },
+      {
+        "edgeName": "8",
+        "weight": 8
+      },
+      {
+        "edgeName": "9",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "5",
+    "heuristicEvaluation": 20,
+    "edges": [
+      {
+        "edgeName": "1",
+        "weight": 1
+      },
+      {
+        "edgeName": "3",
+        "weight": 2
+      },
+      {
+        "edgeName": "4",
+        "weight": 3
+      },
+      {
+        "edgeName": "7",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "6",
+    "heuristicEvaluation": 19,
+    "edges": [
+      {
+        "edgeName": "3",
+        "weight": 4
+      },
+      {
+        "edgeName": "7",
+        "weight": 3
+      },
+      {
+        "edgeName": "8",
+        "weight": 6
+      }
+    ]
+  },
+  {
+    "topName": "7",
+    "heuristicEvaluation": 17,
+    "edges": [
+      {
+        "edgeName": "5",
+        "weight": 4
+      },
+      {
+        "edgeName": "6",
+        "weight": 3
+      },
+      {
+        "edgeName": "12",
+        "weight": 6
+      }
+    ]
+  },
+  {
+    "topName": "8",
+    "heuristicEvaluation": 16,
+    "edges": [
+      {
+        "edgeName": "4",
+        "weight": 8
+      },
+      {
+        "edgeName": "6",
+        "weight": 6
+      },
+      {
+        "edgeName": "10",
+        "weight": 3
+      },
+      {
+        "edgeName": "11",
+        "weight":2
+      },
+      {
+        "edgeName": "12",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "9",
+    "heuristicEvaluation": 14,
+    "edges": [
+      {
+        "edgeName": "4",
+        "weight": 2
+      },
+      {
+        "edgeName": "10",
+        "weight": 7
+      }
+    ]
+  },
+  {
+    "topName": "10",
+    "heuristicEvaluation": 14,
+    "edges": [
+      {
+        "edgeName": "8",
+        "weight":3
+      },
+      {
+        "edgeName": "9",
+        "weight": 7
+      },
+      {
+        "edgeName": "11",
+        "weight": 6
+      },
+      {
+        "edgeName": "15",
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "topName": "11",
+    "heuristicEvaluation": 14,
+    "edges": [
+      {
+        "edgeName": "8",
+        "weight": 2
+      },
+      {
+        "edgeName": "10",
+        "weight": 6
+      },
+      {
+        "edgeName": "12",
+        "weight": 7
+      },
+      {
+        "edgeName": "14",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "topName": "12",
+    "heuristicEvaluation": 14,
+    "edges": [
+      {
+        "edgeName": "7",
+        "weight": 6
+      },
+      {
+        "edgeName": "8",
+        "weight": 2
+      },
+      {
+        "edgeName": "11",
+        "weight": 7
+      },
+      {
+        "edgeName": "13",
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "topName": "13",
+    "heuristicEvaluation": 12,
+    "edges": [
+      {
+        "edgeName": "12",
+        "weight": 5
+      },
+      {
+        "edgeName": "18",
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "topName": "14",
+    "heuristicEvaluation": 11,
+    "edges": [
+      {
+        "edgeName": "11",
+        "weight": 3
+      },
+      {
+        "edgeName": "15",
+        "weight": 3
+      },
+      {
+        "edgeName": "17",
+        "weight": 1
+      }
+    ]
+  },
+  {
+    "topName": "15",
+    "heuristicEvaluation": 10,
+    "edges": [
+      {
+        "edgeName": "10",
+        "weight": 5
+      },
+      {
+        "edgeName": "14",
+        "weight": 3
+      },
+      {
+        "edgeName": "16",
+        "weight": 4
+      },
+      {
+        "edgeName": "17",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "16",
+    "heuristicEvaluation": 8,
+    "edges": [
+      {
+        "edgeName": "15",
+        "weight": 4
+      },
+      {
+        "edgeName": "19",
+        "weight": 8
+      }
+    ]
+  },
+  {
+    "topName": "17",
+    "heuristicEvaluation": 7,
+    "edges": [
+      {
+        "edgeName": "14",
+        "weight": 1
+      },
+      {
+        "edgeName": "15",
+        "weight": 2
+      },
+      {
+        "edgeName": "19",
+        "weight": 3
+      },
+      {
+        "edgeName": "21",
+        "weight": 9
+      }
+    ]
+  },
+  {
+    "topName": "18",
+    "heuristicEvaluation": 5,
+    "edges": [
+      {
+        "edgeName": "13",
+        "weight": 5
+      },
+      {
+        "edgeName": "20",
+        "weight": 4
+      },
+      {
+        "edgeName": "21",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "19",
+    "heuristicEvaluation": 4,
+    "edges": [
+      {
+        "edgeName": "16",
+        "weight": 8
+      },
+      {
+        "edgeName": "17",
+        "weight": 3
+      },
+      {
+        "edgeName": "20",
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "topName": "20",
+    "heuristicEvaluation": 3,
+    "edges": [
+      {
+        "edgeName": "18",
+        "weight": 4
+      },
+      {
+        "edgeName": "19",
+        "weight": 5
+      },
+      {
+        "edgeName": "21",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "21",
+    "heuristicEvaluation": 1,
+    "edges": [
+      {
+        "edgeName": "17",
+        "weight": 9
+      },
+      {
+        "edgeName": "18",
+        "weight": 4
+      },
+      {
+        "edgeName": "20",
+        "weight": 2
+      }
+    ]
+  }
+]
