@@ -8,7 +8,7 @@ class AStar(GraphSearchAlgorithm):
     def __init__(self, graph):
         super().__init__(graph)
 
-    def a_star(self):
+    def run(self):
         start_time = time.time()
         turn = []
         iteration = 0

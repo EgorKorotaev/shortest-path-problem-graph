@@ -1,4 +1,7 @@
-class GraphSearchAlgorithm:
+from abc import ABC, abstractmethod
+
+
+class GraphSearchAlgorithm(ABC):
 
     def __init__(self, graph):
         self.graph = graph
@@ -37,3 +40,7 @@ class GraphSearchAlgorithm:
                     if edge['edgeName'] == item[item.index(top) + 1]:
                         cost = cost + edge['weight']
         return cost
+
+    @abstractmethod
+    def run(self):
+        pass

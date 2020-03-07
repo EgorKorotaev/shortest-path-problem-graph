@@ -11,12 +11,18 @@ def main():
 
     x = PrettyTable()
     x.field_names = ['алгоритм', 'путь', 'длинна', 'вес', 'итерации', 'время']
+    #
+    # algorithms = [AStar(graph)]
+    #
+    # for algo in algorithms:
+    #     x.add_row(algo.run())
+    #
     x.add_row(graph.depth_first())
     x.add_row(graph.breadth_first())
     x.add_row(graph.hill_climbing())
     x.add_row(graph.british_museum())
     x.add_row(graph.branch_and_bound())
-    x.add_row(AStar(graph).a_star())
+    x.add_row(AStar(graph).run())
     print(x)
 
 
