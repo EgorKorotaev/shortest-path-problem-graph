@@ -140,22 +140,3 @@ class Graph:
             turn.extend(self.getPaths(temp_Top))
 
             iteration = iteration + 1
-
-    def branch_and_bound(self):
-        start_time = time.time()
-        turn = []
-        iteration = 0
-        turn.append([self.start])
-
-        while True:
-            if len(turn) == 0:
-                return [0, iteration, 'hill_climbing', (time.time() - start_time)]
-            elif turn[0][len(turn[0]) - 1] == self.finish:
-                return ['branch_and_bound', turn[0], len(turn[0]), self.keyCost(turn[0]), iteration, (time.time() - start_time)]
-
-            temp_Top = turn[0]
-            turn.pop(0)
-
-            turn.extend(self.getPaths(temp_Top))
-            turn = self.removeDuplicateEndpoints(turn)
-            iteration = iteration + 1
