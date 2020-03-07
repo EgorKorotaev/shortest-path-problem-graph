@@ -1,4 +1,4 @@
-from Repository import Graph
+from Graph import Graph
 from prettytable import PrettyTable
 
 

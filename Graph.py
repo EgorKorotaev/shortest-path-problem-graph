@@ -20,17 +20,14 @@ class Graph:
         self.finish = finish
         self.a_coefficient = float(a_coefficient)
 
-    def repeatedPartAll(self, temp_Top):
+    def getPaths(self, path):
         raw_turn = []
-        for branch in self.graph[str(temp_Top[len(temp_Top) - 1])].edges:
-            temp_turn = temp_Top.copy()
-            temp_turn.append(branch['edgeName'])
-            number_of_repetitions = 0
-            for top in temp_turn:
-                if temp_turn.count(top) == 1:
-                    number_of_repetitions = number_of_repetitions + 1
-            if number_of_repetitions == len(temp_turn):
-                raw_turn.extend([temp_turn])
+        for branch in self.graph[str(path[-1])].edges:
+            path_extended = path.copy()
+            new_vertex = branch['edgeName']
+            path_extended.append(new_vertex)
+            if new_vertex not in path:
+                raw_turn.extend([path_extended])
         return raw_turn
 
     def removeDuplicateEndpoints(self, turn):
@@ -73,7 +70,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            for top in self.repeatedPartAll(temp_Top):
+            for top in self.getPaths(temp_Top):
                 turn.insert(0, top)
             iteration = iteration + 1
 
@@ -92,7 +89,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            turn.extend(self.repeatedPartAll(temp_Top))
+            turn.extend(self.getPaths(temp_Top))
             iteration = iteration + 1
 
     def hill_climbing(self):
@@ -110,7 +107,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            turn.extend(self.repeatedPartAll(temp_Top))
+            turn.extend(self.getPaths(temp_Top))
 
             def keyEvaluation(item):
                 return self.graph[str(item[len(item) - 1])].heuristicEvaluation
@@ -140,7 +137,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            turn.extend(self.repeatedPartAll(temp_Top))
+            turn.extend(self.getPaths(temp_Top))
 
             iteration = iteration + 1
 
@@ -159,7 +156,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            turn.extend(self.repeatedPartAll(temp_Top))
+            turn.extend(self.getPaths(temp_Top))
             turn = self.removeDuplicateEndpoints(turn)
             iteration = iteration + 1
 
@@ -178,7 +175,7 @@ class Graph:
             temp_Top = turn[0]
             turn.pop(0)
 
-            turn.extend(self.repeatedPartAll(temp_Top))
+            turn.extend(self.getPaths(temp_Top))
             turn = self.removeDuplicateEndpoints(turn)
 
             def keyA(item):
