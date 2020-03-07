@@ -1,6 +1,8 @@
 from Graph import Graph
 from prettytable import PrettyTable
 
+from algorithms.AStar import AStar
+
 
 def main():
     graph = Graph()
@@ -14,7 +16,7 @@ def main():
     x.add_row(graph.hill_climbing())
     x.add_row(graph.british_museum())
     x.add_row(graph.branch_and_bound())
-    x.add_row(graph.a_star())
+    x.add_row(AStar(graph).a_star())
     print(x)
 
 
