@@ -20,15 +20,15 @@ class GraphSearchAlgorithm(ABC):
         turn.sort(key=self.keyCost)
         counting = {}
         for item in turn:
-            if counting.get(str(item[len(item) - 1])) is None:
-                counting[str(item[len(item) - 1])] = 0
+            if counting.get(str(item[-1])) is None:
+                counting[str(item[-1])] = 0
             else:
-                counting[str(item[len(item) - 1])] = counting[str(item[len(item) - 1])] + 1
+                counting[str(item[-1])] = counting[str(item[-1])] + 1
         turn.reverse()
         for item in turn:
-            if counting[str(item[len(item) - 1])] != 0:
+            if counting[str(item[-1])] != 0:
                 turn.remove(item)
-                counting[str(item[len(item) - 1])] = counting[str(item[len(item) - 1])] - 1
+                counting[str(item[-1])] = counting[str(item[-1])] - 1
         turn.reverse()
         return turn
 

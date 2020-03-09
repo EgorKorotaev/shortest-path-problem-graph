@@ -3,6 +3,10 @@ from prettytable import PrettyTable
 
 from algorithms.AStar import AStar
 from algorithms.BranchAndBound import BranchAndBound
+from algorithms.BritishMuseum import BritishMuseum
+from algorithms.HillClimbing import HillClimbing
+from algorithms.DepthFirst import DepthFirst
+from algorithms.BreadthFirst import BreadthFirst
 
 
 def main():
@@ -13,15 +17,11 @@ def main():
     x = PrettyTable()
     x.field_names = ['алгоритм', 'путь', 'длинна', 'вес', 'итерации', 'время']
 
-    algorithms = [BranchAndBound(graph), AStar(graph)]
+    algorithms = [BreadthFirst(graph), DepthFirst(graph), HillClimbing(graph), BritishMuseum(graph), BranchAndBound(graph), AStar(graph)]
 
     for algorithm in algorithms:
         x.add_row(algorithm.run())
 
-    x.add_row(graph.depth_first())
-    x.add_row(graph.breadth_first())
-    x.add_row(graph.hill_climbing())
-    x.add_row(graph.british_museum())
     print(x)
 
 
