@@ -15,7 +15,7 @@ def main():
     graph.initialization(input('start: '), input('finish: '), input('a_coefficient: '))
 
     x = PrettyTable()
-    x.field_names = ['алгоритм', 'путь', 'длинна', 'вес', 'итерации', 'время']
+    x.field_names = ['algorithm', 'turn', 'lan', 'cost', 'iteration', 'time']
 
     algorithms = [BreadthFirst(graph), DepthFirst(graph), HillClimbing(graph), BritishMuseum(graph), BranchAndBound(graph), AStar(graph)]
 
