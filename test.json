@@ -1,0 +1,130 @@
+[
+  {
+    "topName": "S",
+    "heuristicEvaluation": 10,
+    "edges": [
+      {
+        "edgeName": "A",
+        "weight": 3
+      },
+      {
+        "edgeName": "D",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "A",
+    "heuristicEvaluation": 5,
+    "edges": [
+      {
+        "edgeName": "S",
+        "weight": 3
+      },
+      {
+        "edgeName": "B",
+        "weight": 5
+      },
+      {
+        "edgeName": "D",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "B",
+    "heuristicEvaluation": 4,
+    "edges": [
+      {
+        "edgeName": "A",
+        "weight": 5
+      },
+      {
+        "edgeName": "E",
+        "weight": 5
+      },
+      {
+        "edgeName": "C",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "C",
+    "heuristicEvaluation": 3,
+    "edges": [
+      {
+        "edgeName": "B",
+        "weight": 4
+      },
+      {
+        "edgeName": "G",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "topName": "D",
+    "heuristicEvaluation": 19,
+    "edges": [
+      {
+        "edgeName": "S",
+        "weight": 4
+      },
+      {
+        "edgeName": "A",
+        "weight": 2
+      },
+      {
+        "edgeName": "E",
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "topName": "E",
+    "heuristicEvaluation": 18,
+    "edges": [
+      {
+        "edgeName": "D",
+        "weight": 2
+      },
+      {
+        "edgeName": "B",
+        "weight": 5
+      },
+      {
+        "edgeName": "F",
+        "weight": 4
+      }
+    ]
+  },
+  {
+    "topName": "F",
+    "heuristicEvaluation": 16,
+    "edges": [
+      {
+        "edgeName": "E",
+        "weight": 4
+      },
+      {
+        "edgeName": "G",
+        "weight": 3
+      }
+    ]
+  },
+  {
+    "topName": "G",
+    "heuristicEvaluation": 1,
+    "edges": [
+      {
+        "edgeName": "F",
+        "weight": 3
+      },
+      {
+        "edgeName": "C",
+        "weight": 3
+      }
+    ]
+  }
+]
